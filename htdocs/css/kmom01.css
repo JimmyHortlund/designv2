@@ -1,0 +1,89 @@
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+
+/* Poor-mans normalize */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hide submenu, leave this to kmom02 */
+.rm-desktop ul {
+    display: none;
+}
+
+/* Hide responsive/mobile menu, leave this to kmom02 */
+.rm-navbar-max {
+    display: none;
+}
+
+/* ______________________contaier_________________________ */
+.wrap-all {
+    background-color: #f0f0f0;
+}
+
+.outer-wrap {
+    width: 100%;
+}
+
+.inner-wrap {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/* _______________________Main____________________________ */
+
+.inner-wrap {
+    padding: 2em 0;
+}
+
+
+/* ________________________Header___________________________ */
+
+.region-header-col-1 {
+    float: left;
+    width: 30%;
+    margin-right: 1em;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+}
+
+/* site logo */
+.site-logo {
+    display: none;
+}
+
+.my-navbar {
+    list-style: none;
+}
+
+.my-navbar li {
+    padding: 0.5em 1em;
+    display: inline;
+}
+
+/* _______________________Footer________________________ */
+
+.footer-column {
+    width: 33%;
+    float: left;
+}
+
+.footer-column {
+    border: solid;
+    padding: 0.5em;
+}
+
+.block {
+    text-align: center;
+}
+
