@@ -1,0 +1,200 @@
+/*!
+ * LESS version of the stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Its intention is to
+ * use kmom01.css and lessify the style and use this as a wrapper for the new
+ * style.
+ */
+/**
+ * Internal self contained modules, save in directory module/.
+ */
+/*!
+ * Stylesheet for design kmom01.
+ *
+ * This stylesheet is for the design course and kmom01. Fill it with style
+ * to style up the website so it is useable.
+ */
+/* Poor-mans normalize */
+/* ______________________contaier_________________________ */
+/**
+ * Style for the stylechooser.
+ */
+/**
+ * Variables
+ */
+/**
+ * Style
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+/**
+ * Base style to affect HTML elements on a general scale.
+ */
+html {
+  overflow-y: scroll;
+  background-color: #424242;
+}
+body {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background-color: #fff;
+  font: 100.01%/1 serif;
+}
+img {
+  max-width: 100%;
+}
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+/**
+ * Variables
+ */
+/**
+ * General layout
+ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* ______________________contaier_________________________ */
+.inner-wrap {
+  max-width: 960px;
+  margin: 0 auto;
+  margin-top: 1em;
+  background-color: bisque;
+  padding: 2em;
+}
+/* ________________________Header___________________________ */
+.region-header-col-1 {
+  float: left;
+  width: 30%;
+  margin-right: 1em;
+}
+.region-header-col-2 {
+  float: left;
+  width: 60%;
+}
+/* site logo */
+.site-logo {
+  display: none;
+}
+.my-navbar {
+  list-style: none;
+}
+.my-navbar li {
+  display: inline;
+}
+/* _________________Main, and sidebars___________________*/
+.region-main {
+  margin-left: 10%;
+  float: left;
+  width: 70%;
+  overflow: auto;
+}
+.region-main.has-sidebar {
+  margin: 0;
+  background-color: #fff;
+}
+.region-main.has-sidebar-left.has-sidebar-right {
+  width: 60%;
+}
+.region-sidebar-left {
+  float: left;
+  width: 30%;
+  background-color: #ffdddd;
+}
+.region-sidebar-right {
+  float: left;
+  width: 30%;
+  background-color: #ff7676;
+}
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+  width: 20%;
+}
+.block {
+  margin-bottom: 2em;
+}
+/* _______________________Footer________________________ */
+.footer-column {
+  width: 33%;
+  float: left;
+}
+.footer-column {
+  color: #000;
+  padding: 0.5em;
+}
+.block {
+  text-align: center;
+}
+/**
+ * Layout for responsive style through media queries.
+ */
+@media screen and (max-width: 1500px) {
+  .site-logo {
+    display: none;
+  }
+}
+/* navbar */
+@media screen and (max-width: 1320px) {
+  .rm-desktop a {
+    padding-left: 0.1em;
+    padding-right: 0.1em;
+  }
+}
+@media screen and (max-width: 1320px) {
+  .region-header-col-1,
+  .region-header-col-3 {
+    width: 15%;
+  }
+  .region-header-col-2 {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 890px) {
+  .rm-desktop {
+    display: none;
+  }
+}
+/**
+ * Show off the regions used in the website, to ease styling.
+ */
+.regions .outer-wrap {
+  background-color: #f4e3c9;
+  border: 1px solid #e3b774;
+}
+.regions .inner-wrap {
+  background-color: #f4e0e9;
+  border: 1px solid #d995b4;
+}
+.regions .region-header-col-1,
+.regions .region-header-col-2,
+.regions .region-header-col-3,
+.regions .region-flash,
+.regions .region-breadcrumb,
+.regions .region-flash-message,
+.regions .region-columns-above,
+.regions .region-main,
+.regions .region-after-main,
+.regions .region-columns-below,
+.regions .region-sidebar-left,
+.regions .region-sidebar-right,
+.regions .region-footer,
+.regions .region-footer-column-1,
+.regions .region-footer-column-2,
+.regions .region-footer-column-3 {
+  background-color: #b5dce1;
+  border: 1px solid #6cbac4;
+  color: #111;
+}
+/**
+ * My own settings, not currently in their own module.
+ */

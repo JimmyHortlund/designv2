@@ -1,0 +1,117 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+
+/**
+ * General layout
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ______________________contaier_________________________ */
+
+.inner-wrap {
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 1em;
+    background-color: bisque;
+    padding: 2em;
+}
+
+/* ________________________Header___________________________ */
+
+
+.region-header-col-1 {
+    float: left;
+    width: 30%;
+    margin-right: 1em;
+}
+
+.region-header-col-2 {
+    float: left;
+    width: 60%;
+}
+
+/* site logo */
+.site-logo {
+    display: none;
+}
+
+.my-navbar {
+    list-style: none;
+}
+
+.my-navbar li {
+    display: inline;
+}
+
+
+/* _________________Main, and sidebars___________________*/
+
+
+.region-main {
+    margin-left: 10%;
+    float: left;
+    width: 70%;
+    overflow: auto;
+
+    &.has-sidebar {
+        margin: 0;
+        background-color: #fff;
+    }
+
+    &.has-sidebar-left.has-sidebar-right {
+        width: 60%;
+    }
+}
+
+.region-sidebar-left {
+    float: left;
+    width: 30%;
+    background-color: rgb(255, 221, 221);
+}
+.region-sidebar-right {
+    float: left;
+    width: 30%;
+    background-color: rgb(255, 118, 118);
+}
+
+.region-sidebar-left.has-sidebar-right,
+.region-sidebar-right.has-sidebar-left {
+    width: 20%;
+}
+
+
+
+
+.block {
+    margin-bottom: 2em;
+}
+
+/* _______________________Footer________________________ */
+
+.footer-column {
+    width: 33%;
+    float: left;
+}
+
+.footer-column {
+    color: #000;
+    padding: 0.5em;
+}
+
+.block {
+    text-align: center;
+}
+

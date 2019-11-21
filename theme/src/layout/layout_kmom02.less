@@ -1,0 +1,102 @@
+/**
+ * Layout style for general structure of header, navbar, main, footer
+ * and other regions of the page including route specific styles.
+ */
+
+/**
+ * Variables
+ */
+
+/* ___________________Header___________________________*/
+
+.outer-wrap-header {
+    color: #f6f6f6;
+    text-align: center;
+    overflow: visible;
+    background-color: #000;
+}
+
+
+.inner-wrap-header {
+    background-color: #000;
+    max-width: 100%;
+}
+
+.outer-wrap-header:after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.region-header-col-1 {
+    width: 20%;
+    float: left;
+}
+
+.region-header-col-3 {
+    width: 20%;
+    float: left;
+}
+
+.region-header-col-2 {
+    width: 60%;
+    float: left;
+}
+
+.site-logo-text a {
+    text-decoration: none;
+    color: #f6f6f6;
+}
+
+/* _______________________Navbar______________________ */
+
+.rm-desktop li {
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+
+.rm-small {
+    width: 4em;
+}
+
+/* _______________________Main__________________________*/
+
+.inner-wrap-main {
+    overflow: auto;
+    box-shadow: 5px 10px 8px #888888;
+}
+
+.region-main.has-sidebar {
+    background-color: #ffe4c4;
+    box-shadow: 10px 10px 8px #888888;
+    padding: 0 0.5em;
+}
+
+/* _______________________Sidebar________________________ */
+
+.region-sidebar-right {
+    background-color: #ffe4c4;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+.region-sidebar-left {
+    background-color: #ffe4c4;
+    box-shadow: 10px 10px 8px #888888;
+}
+
+/* _______________________Footer________________________ */
+
+.outer-wrap-footer {
+    color: #f6f6f6;
+    clear: both;
+    background-color: #000;
+}
+
+.inner-wrap-footer {
+    background-color: #000;
+}
+
+.footer-column {
+    color: #f6f6f6;
+}
