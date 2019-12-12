@@ -1,5 +1,5 @@
 /*!
- * Stylesheet for design kmom03.
+ * Stylesheet for design kmom04.
  *
  * This stylesheet is for the design course and kmom02 where we use LESS.
  */
@@ -5019,13 +5019,13 @@ a.rm-button.rm-clicked .rm-button-face-2 {
  */
 html {
   overflow-y: scroll;
-  background-color: #fff3e8;
+  background-color: #8a1e1e;
 }
 body {
   margin: 0;
   padding: 0;
   color: #000;
-  background-color: #fff3e8;
+  background-color: #991f1f;
   font: 16px/1.5 "sans-serif";
 }
 img {
@@ -5652,6 +5652,92 @@ body {
     display: none;
   }
 }
-/**
- * My own settings, not currently in their own module.
- */
+/* _________________________________General________________________________ */
+html,
+body {
+  background-color: #000;
+  font-family: sans-serif;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: sans-serif;
+}
+a {
+  color: black;
+}
+.inner-wrap {
+  background-color: #FCE1CA;
+}
+/* _____________________________________footer__________________________________ */
+.inner-wrap-footer {
+  background-color: #632D00;
+}
+.outer-wrap-footer {
+  background-color: #632D00;
+}
+.footer-column {
+  color: #FCE1CA;
+}
+.site-footer p {
+  color: #FCE1CA;
+}
+/* ___________________________________________header_________________________________*/
+.inner-wrap-header {
+  background-color: #632D00;
+  color: #FCE1CA;
+}
+.outer-wrap-header {
+  background-color: #632D00;
+}
+.site-logo-text a {
+  color: #FCE1CA;
+  text-decoration: none;
+}
+/* __________________________________________article__________________________________*/
+.article {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+/* _________________________________________Sidebars____________________________________*/
+.region-sidebar-left {
+  color: #FCE1CA;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: #B85400;
+}
+.region-sidebar-left li {
+  line-height: 2em;
+}
+.region-sidebar-left a {
+  color: #FCE1CA;
+}
+.toc a {
+  text-decoration: none;
+}
+.region-sidebar-right {
+  color: #FCE1CA;
+  padding-right: 1em;
+  padding-left: 1em;
+  background-color: #B85400;
+}
+.next {
+  color: #B85400;
+  padding-left: 1em;
+}
+.previous {
+  padding-left: 1em;
+  color: #B85400;
+}
+.region-breadcrumb {
+  text-decoration: none;
+  text-align: center;
+}
+.region-breadcrumb a {
+  text-decoration: none;
+}
+.region-breadcrumb li {
+  list-style: none;
+}

@@ -6,7 +6,7 @@ return [
     // Use for styling the menu
     "wrapper" => null,
     "class" => "my-navbar rm-default rm-desktop",
- 
+
     // Here comes the menu items
     "items" => [
         [
@@ -52,6 +52,11 @@ return [
             "text" => "Testa",
             "url" => "test",
             "title" => "Testa olika konstruktioner",
+        ],
+        [
+            "text" => "Rapport",
+            "url" => "rapport",
+            "title" => "Rapport",
         ],
     ],
 ];
