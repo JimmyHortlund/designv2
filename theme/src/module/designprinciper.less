@@ -1,0 +1,230 @@
+/* _________________________________General________________________________ */
+html,
+body {
+    background-color: rgb(0, 0, 0);
+    font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: sans-serif;
+    box-shadow: 0px 10px 5px 0px rgba(0,0,0,0.75);
+}
+
+
+h1:hover {
+     /* Start the shake animation and make the animation last for 0.5 seconds */
+  animation: shake 0.5s;
+
+  /* When the animation is finished, start again */
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); } 
+}
+
+a {
+    color: black;
+}
+
+
+.inner-wrap {
+    background-color: #FCE1CA;
+}
+
+
+/* _____________________________________footer__________________________________ */
+.inner-wrap-footer {
+    background-color: #632D00;
+}
+
+.outer-wrap-footer {
+    background-color: #632D00;
+}
+
+.footer-column {
+    color: #FCE1CA;
+}
+
+.site-footer p {
+    color: #FCE1CA;
+}
+
+.my-navbar li:hover {
+    text-decoration: none;
+    color: #632D00 ;
+    border-radius: 30px;
+    transition: background-color 1s ease;
+    background-color: #FCE1CA;
+}
+
+.my-navbar li a:hover {
+    text-decoration: none;
+}
+
+.my-navbar li:nth-child(6) {
+    transform: rotate(25deg)
+}
+
+.my-navbar li:nth-child(6):hover {
+    transform: rotate(0)
+}
+
+
+/* ___________________________________________header_________________________________*/
+.inner-wrap-header {
+    background-color: #632D00;
+    color: #FCE1CA;
+}
+
+.outer-wrap-header {
+    background-color: #632D00;
+}
+
+.site-logo-text a {
+    color: #FCE1CA;
+    text-decoration: none;
+}
+
+/* __________________________________________article__________________________________*/
+
+.article {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+/* _________________________________________Sidebars____________________________________*/
+
+.region-sidebar-left {
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    color: #FCE1CA;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: #B85400;
+}
+
+.region-sidebar-left li {
+    line-height: 2em;
+}
+
+.region-sidebar-left a {
+    color: #FCE1CA;
+}
+
+.toc a {
+    text-decoration: none;
+}
+
+.region-sidebar-right {
+    box-shadow: -10px 10px 5px 0px rgba(0,0,0,0.75);
+    color: #FCE1CA;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: #B85400;
+}
+
+.next {
+    color: #B85400;
+    padding-left: 1em;
+}
+
+.previous {
+    padding-left: 1em;
+    color: #B85400;
+}
+
+
+.region-breadcrumb {
+    text-decoration: none;
+    text-align: center;
+}
+
+.region-breadcrumb a {
+    text-decoration: none;
+}
+
+.region-breadcrumb li {
+    list-style: none;
+}
+
+
+/* ________________________________________BLOGG____________________________________*/
+
+.blog-list-item {
+    padding-left: 1em;
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+.blog-post h1 {
+    clear: both;
+}
+
+.blog-post h3 {
+    clear: both;
+}
+
+
+.site-logo-text-icon img {
+    -webkit-animation-name: wiggle;
+    -ms-animation-name: wiggle;
+    -ms-animation-duration: 1000ms;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -ms-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+    -ms-animation-timing-function: ease-in-out;
+  }
+  
+  @-webkit-keyframes wiggle {
+    0% {-webkit-transform: rotate(10deg);}
+    25% {-webkit-transform: rotate(-10deg);}
+    50% {-webkit-transform: rotate(20deg);}
+    75% {-webkit-transform: rotate(-5deg);}
+    100% {-webkit-transform: rotate(0deg);}
+  }
+  
+  @-ms-keyframes wiggle {
+    0% {-ms-transform: rotate(1deg);}
+    25% {-ms-transform: rotate(-1deg);}
+    50% {-ms-transform: rotate(1.5deg);}
+    75% {-ms-transform: rotate(-5deg);}
+    100% {-ms-transform: rotate(0deg);}
+  }
+  
+  @keyframes wiggle {
+    0% {transform: rotate(10deg);}
+    25% {transform: rotate(-10deg);}
+    50% {transform: rotate(20deg);}
+    75% {transform: rotate(-5deg);}
+    100% {transform: rotate(0deg);}
+}

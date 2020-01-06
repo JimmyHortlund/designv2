@@ -1,0 +1,168 @@
+/* _________________________________General________________________________ */
+html,
+body {
+background: linear-gradient(45deg, #dca 12%, transparent 0, transparent 88%, #dca 0),
+linear-gradient(135deg, transparent 37%, #a85 0, #a85 63%, transparent 0),
+linear-gradient(45deg, transparent 37%, #dca 0, #dca 63%, transparent 0) #753;
+background-size: 25px 25px;
+font-family: sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: sans-serif;
+}
+
+p {
+    padding: 2em;
+    line-height: 40px;
+}
+
+a {
+    color: black;
+}
+
+
+.inner-wrap {
+    background-color: white;
+}
+
+
+/* _____________________________________footer__________________________________ */
+.inner-wrap-footer {
+    background-image: linear-gradient(rgb(56, 25, 0), rgb(224, 101, 0));
+}
+
+.outer-wrap-footer {
+    background-image: linear-gradient(rgb(56, 25, 0), rgb(224, 101, 0));
+}
+
+.footer-column {
+    color: #FCE1CA;
+}
+
+.site-footer p {
+    color: #FCE1CA;
+}
+
+
+/* ___________________________________________header_________________________________*/
+.inner-wrap-header {
+    background-image: linear-gradient(rgb(56, 25, 0), rgb(224, 101, 0));
+    color: #FCE1CA;
+}
+
+.outer-wrap-header {
+    background-image: linear-gradient(rgb(56, 25, 0), rgb(224, 101, 0));
+}
+
+.site-logo-text a {
+    color: #FCE1CA;
+    text-decoration: none;
+}
+
+
+.row {
+    border-radius: 2em;
+}
+
+.region-main {
+    background-color: white;
+}
+
+/* __________________________________________article__________________________________*/
+
+.article {
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+
+/* _________________________________________Sidebars____________________________________*/
+.region-sidebar-left {
+    border-bottom-right-radius: 2em;
+    border-top-right-radius: 2em;
+    color: #FCE1CA;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: rgb(184, 83, 0);
+}
+
+.region-sidebar-left li {
+    line-height: 2em;
+}
+
+.region-sidebar-left a {
+    color: #FCE1CA;
+}
+
+.toc a {
+    text-decoration: none;
+}
+
+.region-sidebar-right {
+    border-bottom-left-radius: 2em;
+    border-top-left-radius: 2em;
+    color: #FCE1CA;
+    padding-right: 1em;
+    padding-left: 1em;
+    background-color: #B85400;
+}
+
+.next {
+    color: #B85400;
+    padding-left: 1em;
+}
+
+.previous {
+    padding-left: 1em;
+    color: #B85400;
+}
+
+
+.region-breadcrumb {
+    text-decoration: none;
+    text-align: center;
+}
+
+.region-breadcrumb a {
+    text-decoration: none;
+}
+
+.region-breadcrumb li {
+    list-style: none;
+}
+
+
+/* ________________________________________BLOGG____________________________________*/
+
+.blog-list-item {
+    padding-left: 1em;
+}
+
+// Enable style from the module and optinally add customized layout
+figure.figure {
+    #desinax-figure.figure();
+}
+
+figure.asciinema {
+    &:extend(figure.figure);
+    #desinax-figure.asciinema();
+}
+
+figure.codepen,
+figure.figure-codepen {
+    &:extend(figure.figure);
+    #desinax-figure.codepen();
+}
+
+.blog-post h1 {
+    clear: both;
+}
+
+.blog-post h3 {
+    clear: both;
+}
